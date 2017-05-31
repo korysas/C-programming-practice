@@ -28,8 +28,8 @@ void reverse(char *str)
         j = len - i - 1;
 
         // make the swap
-        temp = *(str + i);
-        *(str + i) = *(str + j);
-        *(str + j) = temp;
+        temp = str[i];
+        str[i] = str[j];
+        str[j] = temp;
     }
 }
