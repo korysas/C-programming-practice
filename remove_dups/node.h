@@ -1,4 +1,4 @@
-/**
+/*
  * node in a linked list
  */
 struct Node
