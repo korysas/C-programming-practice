@@ -1,14 +1,9 @@
 /**
  * node in a linked list
  */
-#ifndef NODE_H
-#define NODE_H
-
-typedef struct node
+struct Node
 {
     int data;
-    struct node *next;
+    struct Node *next;
 }
-node;
-
-#endif
+Node;
