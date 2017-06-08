@@ -14,10 +14,21 @@ Node;
 // Prototypes
 Node *init_list(int arr[]);
 void dispose_list(Node *node);
+void print_in_reverse(Node *node);
 
 int main(void)
 {
+    // linked list will be based from this array
+    int arr[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
+    // initialize list and get a reference to the list head
+    Node *head = init_list(arr);
+
+    // do the printing work
+    print_in_reverse(head);
+
+    // clean up and free the memory that has been allocated for list
+    dispose_list(head);
 }
 
 /*
@@ -28,7 +39,7 @@ int main(void)
  */
 Node *init_list(int arr[])
 {
-
+    
 }
 
 
@@ -40,6 +51,16 @@ Node *init_list(int arr[])
  * pass in a pointer to the head of the list
  */
 void dispose_list(Node *node)
+{
+
+}
+
+/*
+ * prints a linked list in reverse order
+ *
+ * pass in the head of the list
+ */
+void print_in_reverse(Node *node)
 {
 
 }
