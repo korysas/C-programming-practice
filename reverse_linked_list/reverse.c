@@ -80,7 +80,11 @@ struct Node *init_list(int arr[], int len)
  */
 void dispose_list(struct Node *node)
 {
+    if (node->next != NULL) {
+        dispose_list(node->next);
+    }
 
+    free(node);
 }
 
 /*
